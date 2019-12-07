@@ -1,0 +1,291 @@
+/* default */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #505050;
+}
+.wrapper-page {
+  background-color: #FFF;
+}
+.nav {
+  width: 100%;
+  background-color: #360D3A;
+  position: relative;
+  margin: 0;
+  padding: 8px 0;
+  margin-bottom: 20px;
+}
+.nav .navbrand {
+  display: block;
+  width: 120px;
+  height: 65px;
+  background-image: url('../img/logo-dark-stroke.png');
+  background-size: cover;
+  margin-right: auto;
+  margin-left: 14px;
+}
+.nav .nav-items { 
+  text-align: left;
+  margin: 0;
+  margin-top: 20px;
+}
+.nav-collapse { 
+  height: auto; 
+  overflow: hidden;
+  height: auto;
+  max-height: 150px;
+  transition: max-height .3s ease-out;
+}
+.collapse-nav { max-height: 0; }
+.anim-rotate { 
+  transition: .3s;
+  transform: rotate(360deg); 
+}
+.nav .nav-items .nav-item { 
+  display: block;
+  width: 100%;
+  padding: 6px 24px;
+  margin: 0 0;
+  border-radius: 0;
+  color: #FFF;
+  font-weight: bold;
+  transition: .3s;
+}
+.nav .nav-items .nav-item:hover {
+  background-color: #FFF;
+  color: #360D3A;
+}
+.nav .nav-items .nav-item.active {
+  background-color: #FFF;
+  color: #360D3A;
+}
+.nav .nav-toggler {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  color: #FFF;
+  position: absolute;
+  top: 20px;
+  right: 14px;
+
+  display: block;
+}
+.nav .nav-toggler i { font-size: 36px; }
+
+
+
+
+.table-data-matches {
+  border: none;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+.table-data-matches caption {
+  text-align: left;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.table-data-matches tr {
+  border: none;
+  border-top: 1px solid #959FAF;
+  border-bottom: 1px solid #959FAF;
+}
+.table-data-matches tr td {
+  text-align: center;
+}
+.table-data-matches .circle-status-match {
+  border: 1px solid #360D3A;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  color: #360D3A;
+  margin: 0 auto;
+}
+.tdm-name-home-club,
+.tdm-name-away-club,
+.tdm-score-home-club,
+.tdm-score-away-club {
+  font-weight: bold;
+}
+.tdm-date-matches {
+  color: #959FAF;
+}
+
+
+
+.table-data-standings {
+  font-size: 10px;
+}
+.table-data-standings td[colspan="3"] {
+  border-bottom: 1px solid #E0E0E0;
+}
+.table-data-standings caption {
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.table-data-standings th.u-d {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+.tds-logo img {
+  width: 18px;
+  height: 18px;
+}
+.tds-club-header {
+  height: 132px;
+}
+
+
+
+
+.data-favourite-club {
+  margin-bottom: 60px;
+}
+.data-favourite-club .club-favourite-item {
+  margin-bottom: 40px;
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+  transition: .7s;
+}
+.data-favourite-club .club-favourite-item-anchor {
+  text-decoration: none;
+  color: #360D3A;
+  font-weight: bold;
+}
+.data-favourite-club .club-favourite-item:hover {
+  background-color: rgba(255,40,130,.3);
+}
+.data-favourite-club .club-favourite-anchor,
+.data-favourite-club .club-logo,
+.data-favourite-club .club-name {
+   display: block;
+}
+.data-favourite-club .club-favourite-item-anchor .club-logo {
+  margin: 20px auto;
+}
+.data-favourite-club .club-favourite-item-anchor .remove-favourite-club {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+.data-club .club-item {
+  margin-bottom: 40px;
+  height: 160px;
+  padding: 30px 0;
+  text-align: center;
+  transition-duration: .7s;
+}
+.data-club .club-item:hover {
+  background-color: #F7F7F7;
+}
+.data-club .club-item-anchor {
+  text-decoration: none;
+  color: #360D3A;
+  font-weight: bold;
+}
+.data-club .club-item-anchor,
+.data-club .club-logo,
+.data-club .club-name {
+   display: block;
+ }
+.data-club .club-item-anchor .club-logo {
+  margin: 20px auto;
+  width: 42px;
+  height: 48px;
+}
+
+
+
+.data-favourite-club .club-favourite-item-anchor .club-logo {
+  margin: 20px auto;
+  width: 42px;
+  height: 48px;
+}
+
+
+.loader {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;;
+  border: 20px solid rgba(54, 13, 58, .1);
+  border-right: 20px solid rgba(54, 13, 58, 1);
+  border-radius: 50%;
+  animation : rotate-loading-circle 1.7s linear infinite;
+}
+@keyframes rotate-loading-circle {
+  from { transform: rotate(0deg); } to { transform: rotate(360deg); }
+}
+
+
+
+footer {
+  background-color: #360D3A;
+  color: #FFF;
+  padding: 40px 0;
+}
+/* ./default */
+
+
+/* desktop */
+@media (min-width: 992px) {
+  .nav {
+    padding: 8px 0;
+  }
+  .nav .navbrand {
+    width: 225px;
+    height: 122px;
+    margin: 0 auto;
+  }
+  .nav .nav-toggler {
+    display: none;
+    opacity: none;
+  }
+  .nav .nav-items { 
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    background-color: transparent;
+  }
+  .collapse-nav { max-height: 150px; }
+  .nav .nav-items .nav-item { 
+    display: inline-block;
+    width: 140px;
+    margin: 0 20px;
+    border-radius: 4px;
+    border-bottom: none;
+    text-align: center;
+    padding: 4px 6px;
+  }
+
+  .table-data-matches {
+    font-size: 14px;
+  }
+
+
+
+  .table-data-standings {
+    font-size: 16px;
+  }
+  .table-data-standings caption {
+    font-size: 24px;
+  }
+  .tds-logo img {
+    width: 24px;
+    height: 24px;
+  }
+  .tds-club-header {
+    height: auto;
+  }
+  
+}
+/* ./desktop */
